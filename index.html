@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="sd"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>اسٽاپ واچ</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <style>
+    
+      
+.button {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  border: 3px solid rgba(255, 215, 0, 0.6); /* Golden border with transparency */
+  border-radius: 12px; /* Smooth edges */
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Depth effect */
+  backdrop-filter: blur(10px); /* Glass effect */
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.9; /* Semi-transparent dark bg */
+  font-family: 'Poppins', sans-serif;
+   letter-spacing: 1px;
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+   font-weight: 900;
+}
+
+.input-field {
+padding: 10px;
+ font-size: 16px;
+  color: white;
+  background: transparent;
+  border-radius: 8px;
+  outline: none;
+  border: inset gold;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus {
+  border: 2px solid rgba(255, 215, 0, 1); 
+  box-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
+}
+
+.heading {
+
+  font-weight: bold;
+  color: #FFD700; /* Golden color */
+  text-align: center;
+  text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8); /* Glowing effect */
+}
+
+.icon {
+  font-size: 45px;
+  color: #FFD700;
+  text-shadow: 2px 2px 0px #8B8000, 4px 4px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: translateY(-2px);
+  text-shadow: 4px 4px 0px #8B8000, 6px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+    </style>
+  </head>
+  <body style="background-image: url(images/Sindhibg.jpg); background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; width: 100vw; 
+">
+    
+    <div class="container">
+        <div class="row mb-5 mt-1 mx-1">
+            <h1 class="p-3  mb-5 heading" style="font-size: 55px;"><i class="bi bi-stopwatch-fill mx-2 icon"></i>اسٽاپ واچ</h1>
+
+            <div class="col-lg-4 col-12 input-field mb-2 ">
+             <div class="row p-2 ">
+                <div class="col-6 fw-bold" id="hr" style="font-size: 55px;">٠٠</div>
+                <div class="col-6 text-end " style="font-size: 45px;">ڪلاڪ</div>
+             </div>
+            </div>
+
+            <div class="col-lg-4 col-12 input-field mb-2 ">
+                <div class="row p-2">
+                    <div class="col-6 fw-bold" id="min" style="font-size: 55px;">٠٠</div>
+                    <div class="col-6 text-end" style="font-size: 45px;">منٽ</div>
+                 </div>
+            </div>
+
+            <div class="col-lg-4 col-12 mb-2 input-field">
+                <div class="row p-2">
+                    <div class="col-3  fw-bold" style="font-size: 55px;" id="sec">٠٠</div>
+
+                    <div class="col-1 d-flex align-items-center justify-content-end fw-bold">:</div>
+
+                    <div class="col-1  d-flex align-items-center fs-1" id="count">٠٠</div>
+                    <div class="col-7 text-end" style="font-size: 45px;">سيڪنڊ</div>
+                 </div>
+            </div>
+        </div>
+       <div class="row mb-4">
+        <div class="col-5 col-lg-4">
+            <button type="button" class="btn btn-warning w-100 fs-5 fw-bold button" onclick="Restart()">ٻيهر شروع<i class="bi bi-arrow-repeat mx-1 "></i></button>
+        </div>
+        <div class="col-3 col-lg-4">
+            <button type="button" class="btn btn-danger w-100 fs-5 fw-bold button" onclick="Stop()">بند<i class="bi bi-stop-circle mx-1"></i></button>
+        </div>
+        <div class="col-4 col-lg-4">
+            <button type="button" class="btn btn-success w-100 fs-5 fw-bold button" onclick="Start()">شروع <i class="bi bi-play-fill mx-1"></i></button>
+        </div>
+       </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  
+</body></html>
